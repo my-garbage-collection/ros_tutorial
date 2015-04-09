@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot name="miku" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find urdf_test)/models/define.xacro"/>
+    <xacro:include filename="$(find urdf_test)/models/config.xacro"/>
+
+    <link name="root">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+    </link>
+    <joint name="joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <parent link="root"/>
+        <child link="mmd"/>
+    </joint>
+
+    <link name="mmd">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <visual>
+            <geometry>
+                <mesh filename="${robotPackagePath}/${modelDataResourceFolder}/tda_style_miku/tda_style_miku.dae"/>
+            </geometry>
+        </visual>
+    </link>
+
+</robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+cd ~/ros/<workspace>
+source devel/setup.bash
+rosrun using_markers basic_shapes
+
+rosrun rviz rviz
+
+// @ RVIZ
+Globai Options/Fixed Frame -> /my_frame
+add -> choose 'marker'

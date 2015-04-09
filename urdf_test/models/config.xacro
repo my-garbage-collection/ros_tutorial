@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<robot>
+    <property name="robotPackagePath" value="package://urdf_test/models"/>
+    <property name="modelDataResourceFolder" value="daes"/>
+</robot>
